@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" href="./bootstrap.png">
+    <title>Прва Bootstrap страница</title>
+
+    <style>
+
+        .navbar-nav .nav-link {
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            background-color: #de99ef;
+            color: #fff;
+        }
+
+        .navbar-nav .nav-link.active {
+            background-color: #6a1b9a;
+            color: #fff;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .header img {
+            height: 50px;
+            width: 50px;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="header">
+        <a href="bootstrap.html"><img src="./boot.png" alt="Logo"></a>
+        <h5 class="display-5" style="color: purple; margin-left:10px"><b>Започни со Boostrap 5</b></h5>
+    </div>  
+
+    <hr style="width: 100%; height: 5px; background-color: purple; border: none;"> 
+    
+    <nav class="navbar navbar-expand-sm" style="background-color: #e4c8eb;">
+        <ul class="navbar-nav" style="margin-left: auto; margin-right: auto;">
+            <li class="nav-item">
+                <a class="nav-link" href="./bootstrap.html" style="color:#55006c"><b>Опис на Boostrap</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./firstpage.html" style="color:#55006c"><b>Прва Bootstrap страница</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./typography.html" style="color:#55006c;"><b>Текст/типографија</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./colors.html" style="color:#55006c"><b>Бои</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./tables.html" style="color:#55006c"><b>Табели</b></a>
+            </li>   
+            <li class="nav-item">
+                <a class="nav-link" href="./images.html" style="color:#55006c"><b>Слики</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./other.html" style="color:#55006c"><b>Други компоненти</b></a>
+            </li>
+        </ul>
+    </nav>
+
+    <p><h4 style="margin-left: 10px;"><b>Што е Bootstrap?</b></h4></p>
+    
+    <ul>
+        <li><p style="margin-left: 10px;">Bootstrap е бесплатна front-end рамка за побрз и полесен веб-развој.</p></li>
+        <li><p style="margin-left: 10px;">На почетната страница на овој Bootstrap туторијал споменавме дека веб дизајнот е responsive. Што значи тоа?</p></li>
+        <li><p style="margin-left: 10px;">Респонзивниот веб-дизајн е за создавање веб-страници кои автоматски се прилагодуваат за да изгледаат добро на сите уреди, од мали телефони до големи десктоп компјутери.</p></li>
+    </ul>
+
+    <br>
+    <p style="margin-left: 10px;">Во продолжение е даден пример за Bootstrap веб-страница:</p>
+    <div class="container-fluid p-3 text-white text-center" style="background-color: rgb(8, 75, 97);">
+        <h2>Мојата прва Bootstrap страница</h2>
+        <p>Промени ја големината на оваа респонзивна страница за да го видиш ефектот!</p>   
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h2>Прва колона</h2>
+                    <p>Tamen fides sciri sensu dat hoc nul favis culpa sic. Sicuti obvium monere maxima ha fallam aliter ii eo.</p>
+                    <p>Meis etsi an addi ullo quos ii nego. Admi nemo aspi ecce res qui bono dei. Ii eo rationes patiatur comparem. Opiniones calescere aut hic formantur abstinere.</p>
+                </div>   
+                <div class="col-sm-4">
+                    <h3>Втора колона</h3>
+                    <p>Innumeras res tur his perfectum essentiae. Utrum nihil ideis illum tango rum sed.</p>
+                    <p>Minus patet ac spero at ne serie vi aliud prona. Jam creando dicendo calebat ima quosdam deo attendo sui.</p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Трета колона</h3>
+                    <p>Saeculum in si admoneri se integram unitatis rerumque paulatim. Hesterna sequatur cavendum rum rationum praecise rerumque sui.</p>
+                    <p>Facultates at supponatur tractandae du dissolvant continuata.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <p><h4 style="margin-left: 10px;"><b>Зошто да користите Bootstrap?</b></h4></p>
+    <p><h5 style="margin-left: 10px;">Предности на Bootstrap:</h5></p>
+    <ul>
+        <li><p style="margin-left: 10px;"><b>Лесен за користење:</b> Секој со само основно познавање на HTML и CSS може да започне да користи Bootstrap.</p></li>
+        <li><p style="margin-left: 10px;"><b>Респонзивни карактеристики:</b> Поради респознивната природа на CSS стилот на Bootstrap, веб-страниците се прилагодуваат на телефони, таблети и десктоп уреди.</p></li>
+        <li><p style="margin-left: 10px;"><b>Mobile-first пристап:</b> Во Bootstrap, стиловите mobile-first се дел од основната рамка.</p></li>
+        <li><p style="margin-left: 10px;"><b>Компатибилност со веб-прелистувач:</b> Bootstrap 5 е компатибилен со сите модерни веб-прелистувачи (Chrome, Firefox, Edge, Safari и Opera). Може да се забележи дека доколку ви е потребна подршка за верзијата 11 на Internet Explorer (IE11) или некоја подолна верзија, мора да користите BS4 или BS3.</p></li>
+    </ul>
+
+    <br>
+    <h4 style="margin-left: 10px;"><b>Заклучок</b></h4>
+    <p style="margin-left: 10px;">
+        Создавањето на прва Bootstrap страница е основа за разбирање на структурата и функционалноста на Bootstrap 5. 
+        Оваа основа овозможува лесно прилагодување и размена на различни компоненти.
+        Со правилно организирање на HTML и користење на Bootstrap класи, можете да создадете привлечно и респонзивно веб искуство 
+        кое ќе биде достапно на различни уреди. Чувањето на структурирана и чиста код база е клучно за одржување и развој на веб страницата.
+    </p>
+
+</body>
+</html>

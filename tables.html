@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Табели</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" href="./bootstrap.png">
+
+    <style>
+
+        .navbar-nav .nav-link {
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            background-color: #de99ef;
+            color: #fff;
+        }
+
+        .navbar-nav .nav-link.active {
+            background-color: #6a1b9a;
+            color: #fff;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .header img {
+            height: 50px;
+            width: 50px;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="header">
+        <a href="bootstrap.html"><img src="./boot.png" alt="Logo"></a>
+        <h5 class="display-5" style="color: purple; margin-left:10px"><b>Табели</b></h5>
+    </div>  
+
+    <hr style="width: 100%; height: 5px; background-color: purple; border: none;"> 
+    
+    <nav class="navbar navbar-expand-sm" style="background-color: #e4c8eb;">
+        <ul class="navbar-nav" style="margin-left: auto; margin-right: auto;">
+            <li class="nav-item">
+                <a class="nav-link" href="./bootstrap.html" style="color:#55006c"><b>Опис на Boostrap</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./firstpage.html" style="color:#55006c"><b>Прва Bootstrap страница</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./typography.html" style="color:#55006c;"><b>Текст/типографија</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./colors.html" style="color:#55006c"><b>Бои</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./tables.html" style="color:#55006c"><b>Табели</b></a>
+            </li>   
+            <li class="nav-item">
+                <a class="nav-link" href="./images.html" style="color:#55006c"><b>Слики</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./other.html" style="color:#55006c"><b>Други компоненти</b></a>
+            </li>
+        </ul>
+    </nav>
+
+    <p><h4 style="margin-left: 10px;"><b>Креирање на табели со Bootstrap</b></h4></p>
+    <p style="margin-left: 10px;">Bootstrap 5 нуди лесен начин за креирање на табели со вградени стилови и класи.</p>
+
+    <p><h4 style="margin-left: 10px;"><b>Основна табела со користење на <code>.table</code>:</b></h4></p>
+    <div class="table-responsive">
+        <table class="table">
+            <thead class="table-light">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Име</th>
+                    <th scope="col">Презиме</th>
+                    <th scope="col">Емаил</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Иван</td>
+                    <td>Иванов</td>
+                    <td>ivan@example.com</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Марија</td>
+                    <td>Марковиќ</td>
+                    <td>maria@example.com</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Петар</td>
+                    <td>Петров</td>
+                    <td>petar@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p><h4 style="margin-left: 10px;"><b>Стил на табелите</b></h4></p>
+    <p style="margin-left: 10px;">Може да додадете различни класи за да ја стилувате вашата табела: <code>.table table-striped table-bordered</code>:</p>
+
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Име</th>
+                    <th scope="col">Презиме</th>
+                    <th scope="col">Емаил</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Ана</td>
+                    <td>Анастасова</td>
+                    <td>ana@example.com</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Кирил</td>
+                    <td>Кирилов</td>
+                    <td>kiril@example.com</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Теодора</td>
+                    <td>Тодорова</td>
+                    <td>teodora@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <br>
+    <h4 style="margin-left: 10px;"><b>Табели со хиерархија</b></h4>
+    <p style="margin-left: 10px;">Може да користите табели за прикажување на хиерархија. За посебен ефект се користи <code>.table table-hover</code>. Следната табела ги прикажува категориите и поткатегориите:</p>
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Категорија</th>
+                    <th scope="col">Поткатегорија</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Технологија</td>
+                    <td>Компјутери</td>
+                </tr>
+                <tr>
+                    <td>Технологија</td>
+                    <td>Мобилни уреди</td>
+                </tr>
+                <tr>
+                    <td>Спорт</td>
+                    <td>Фудбал</td>
+                </tr>
+                <tr>
+                    <td>Спорт</td>
+                    <td>Кошарка</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <br>
+    <h4 style="margin-left: 10px;"><b>Заклучок</b></h4>
+    <p style="margin-left: 10px;">
+        Табелите во Bootstrap 5 нудат ефективен начин за организирање на податоци во структура со редови и колони. 
+        Со класите на Bootstrap, можете лесно да создадете стилски и табели кои се респонзивни, кои можат да се прилагодат на различни уреди. 
+        Користењето на различни стилови, како што се обележување на редови, управување со табели и класите за боја, 
+        помага во подобрување на читливоста и визуелната привлечност на податоците. 
+        Разбирањето на основните елементи на табелите и нивното комбинирање со други Bootstrap компоненти создава 
+        пофункционален и естетски дизајн на веб страниците.
+    </p>
+
+</body>
+</html>
